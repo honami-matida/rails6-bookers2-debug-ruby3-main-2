@@ -54,5 +54,9 @@
       </div>
     </div>
   </nav>
-  <%= render partial: 'searches/search_form' %>
+  <div class ="center-block">
+    <% unless current_page?(root_path) %>
+      <%= render partial: 'searches/search_form' %>
+    <% end %>
+  </div>
 </header>
